@@ -9,3 +9,7 @@
 .eb-garamond {
     font-family: 'EB Garamond', serif;
 }
+
+#innerCardImage {
+    max-width: 200px;
+}

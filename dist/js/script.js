@@ -5,31 +5,31 @@ var guidelineData = {
 		0: {
 			DropDownOption: "Festival of Speed",
 			imageURL:
-			"https://static.goodwood.com/globalassets/horseracing/2019/fixtures/op-sat/qgf_18_chrisison_0161.jpg?width=800&quality=80",
+			"https://static.goodwood.com/globalassets/motorsport/fos/logo/festival-of-speed-logo.svg?width=800&quality=80",
 			pdfALink: "#",
 		},
 		1: {
 			DropDownOption: "Members Meeting",
 			imageURL:
-			"https://static.goodwood.com/globalassets/horseracing/openingsaturday_17_jaysonfong_146.jpg?width=800&quality=80",
+			"https://ticketing.goodwood.com/Assets/HTML/Images/logos/grrc-color-logo.svg?width=800&quality=80",
 			urlAppliedFilter: "#",
 		},
 		2: {
 			DropDownOption: "Goodwood Revival",
 			imageURL:
-			"https://static.goodwood.com/globalassets/horseracing/2019/fixtures/op-sat/qgf_18_chrisison_0161.jpg?width=800&quality=80",
+			"https://static.goodwood.com/globalassets/revival-logo.png?width=800&quality=80",
 			pdfALink: "#",
 		},
 		3: {
 			DropDownOption: "Qatar Goodwood",
 			imageURL:
-			"https://static.goodwood.com/globalassets/horseracing/openingsaturday_17_jaysonfong_146.jpg?width=800&quality=80",
+			"https://www.goodwood.com/globalassets/press/horseracing/qgf-logo---red-outline.png?width=800&quality=80",
 			urlAppliedFilter: "#",
 		},
 		4: {
 			DropDownOption: "Goodwoof",
 			imageURL:
-			"https://static.goodwood.com/globalassets/horseracing/2019/fixtures/op-sat/qgf_18_chrisison_0161.jpg?width=800&quality=80",
+			"https://static.goodwood.com/globalassets/goodwoof/goodwoof-mars-petcare-logo.png?width=800&quality=80",
 			pdfALink: "#",
 		},
 		5: {
@@ -82,15 +82,26 @@ let cardContainer = document.getElementById("outerCardContainer");
 function onPageLoad() {
     displayedLogic();
 }
+let data = guidelineData.events.values;
 
 
 function displayedLogic() {
-    let data = guidelineData.events.values;
+	console.log("hello")
     console.log(data.length)
-    for (let i = 0; i < data.length; i++) {
+    console.log("works")
+    let injectContainer = document.getElementById("outerCardContainer");
+    let html = "";
+    for (let i = 0; i < Object.keys(data).length; i++) {
         console.log("hello")
         console.log(data[i])
+        html += `<div class="sm:w-78 sm:h-86 border-1 border-[#131313]">
+            <img id="innerCardImage" class="w-48" src="${data[i].imageURL}">
+            <div class="w-full">
+                <p id="innerCardText">${data[i].DropDownOption}</p>
+            </div>
+        </div>`;
     }
+    injectContainer.innerHTML = html;
 }
 onPageLoad();
 

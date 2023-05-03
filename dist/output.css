@@ -572,6 +572,11 @@ video {
   margin-right: 1rem;
 }
 
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -811,11 +816,6 @@ video {
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
-.border-s-\[\#131313\] {
-  --tw-border-opacity: 1;
-  border-inline-start-color: rgb(19 19 19 / var(--tw-border-opacity));
-}
-
 .bg-\[\#131313\] {
   --tw-bg-opacity: 1;
   background-color: rgb(19 19 19 / var(--tw-bg-opacity));
@@ -1038,6 +1038,10 @@ video {
   font-family: 'EB Garamond', serif;
 }
 
+#innerCardImage {
+  max-width: 200px;
+}
+
 .hover\:bg-gray-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
@@ -1087,20 +1091,12 @@ video {
     display: none;
   }
 
-  .sm\:h-86 {
-    height: 22.25rem;
-  }
-
   .sm\:h-\[316px\] {
     height: 316px;
   }
 
   .sm\:w-1\/2 {
     width: 50%;
-  }
-
-  .sm\:w-78 {
-    width: 18.875rem;
   }
 
   .sm\:w-\[59\%\] {
