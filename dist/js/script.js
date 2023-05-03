@@ -95,7 +95,9 @@ function displayedLogic() {
         console.log("hello")
         console.log(data[i])
         html += `<a><div class="guideline-cards">
+            <div class="outerCardImageContainer">
             <img id="innerCardImage" class="w-48 p-4" src="${data[i].imageURL}">
+            </div>
             <div class="w-full">
                 <p id="innerCardText p-4">${data[i].DropDownOption}</p>
             </div>
@@ -107,26 +109,26 @@ function displayedLogic() {
 onPageLoad();
 
 // select the container where the HTML will be added
-const container = document.querySelector('#container');
+// const container = document.querySelector('#container');
 
-// loop over the events data
-for (let i = 0; i < guidelineData.events.values.length; i++) {
-    // create a new HTML element
-    const div = document.createElement('div');
-    div.classList.add('sm:w-78', 'sm:h-86', 'border-1', 'border-[#131313]');
+// // loop over the events data
+// for (let i = 0; i < guidelineData.events.values.length; i++) {
+//     // create a new HTML element
+//     const div = document.createElement('div');
+//     div.classList.add('sm:w-78', 'sm:h-86', 'border-1', 'border-[#131313]');
 
-    // create a new image element and set its source to the imageURL
-    const img = document.createElement('img');
-    img.id = 'innerCardImage';
-    img.src = guidelineData.events.values[i].imageURL;
-    div.appendChild(img);
+//     // create a new image element and set its source to the imageURL
+//     const img = document.createElement('img');
+//     img.id = 'innerCardImage';
+//     img.src = guidelineData.events.values[i].imageURL;
+//     div.appendChild(img);
 
-    // create a new paragraph element and set its text to the DropdownOption
-    const p = document.createElement('p');
-    p.id = 'innerCardText';
-    p.innerText = guidelineData.events.values[i].DropDownOption;
-    div.appendChild(p);
+//     // create a new paragraph element and set its text to the DropdownOption
+//     const p = document.createElement('p');
+//     p.id = 'innerCardText';
+//     p.innerText = guidelineData.events.values[i].DropDownOption;
+//     div.appendChild(p);
 
-    // add the new HTML element to the container
-    container.appendChild(div);
-}
+//     // add the new HTML element to the container
+//     container.appendChild(div);
+// }
