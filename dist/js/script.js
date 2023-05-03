@@ -94,12 +94,13 @@ function displayedLogic() {
     for (let i = 0; i < Object.keys(data).length; i++) {
         console.log("hello")
         console.log(data[i])
-        html += `<div class="sm:w-78 sm:h-86 border-1 border-[#131313]">
-            <img id="innerCardImage" class="w-48" src="${data[i].imageURL}">
+        html += `<a><div class="guideline-cards">
+            <img id="innerCardImage" class="w-48 p-4" src="${data[i].imageURL}">
             <div class="w-full">
-                <p id="innerCardText">${data[i].DropDownOption}</p>
+                <p id="innerCardText p-4">${data[i].DropDownOption}</p>
             </div>
-        </div>`;
+        </div>
+        </a>`;
     }
     injectContainer.innerHTML = html;
 }

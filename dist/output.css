@@ -1039,7 +1039,18 @@ video {
 }
 
 #innerCardImage {
-  max-width: 200px;
+  max-width: 266px;
+  max-height: 266px;
+}
+
+.guideline-cards {
+  width: 300px;
+  border: solid 1px #131313;
+  height: 356px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .hover\:bg-gray-700:hover {
@@ -1109,6 +1120,10 @@ video {
 
   .sm\:max-w-\[80rem\] {
     max-width: 80rem;
+  }
+
+  .sm\:max-w-\[81rem\] {
+    max-width: 81rem;
   }
 
   .sm\:flex-row {
