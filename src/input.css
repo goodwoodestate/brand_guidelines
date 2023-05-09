@@ -15,6 +15,11 @@
     max-height: 266px;
 }
 
+.inner-card__text {
+    margin-left: 18px;
+    margin-bottom: 18px;
+}
+
 .guideline-cards {
     width: 300px;
     border: solid 1px #131313;
@@ -28,4 +33,7 @@
 .outerCardImageContainer {
     width: 300px;
     height: 356px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

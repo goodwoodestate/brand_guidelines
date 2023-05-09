@@ -35,7 +35,7 @@ var guidelineData = {
 		5: {
 			DropDownOption: "Goodwood Racecourse",
 			imageURL:
-			"https://static.goodwood.com/globalassets/horseracing/openingsaturday_17_jaysonfong_146.jpg?width=800&quality=80",
+			"https://static.goodwood.com/globalassets/horseracing/racecourse/racecourse.png",
 			urlAppliedFilter: "#",
 		},
 		},
@@ -80,12 +80,12 @@ var guidelineData = {
 // Gets the elements that we are going to be injecting data
 let cardContainer = document.getElementById("outerCardContainer");
 function onPageLoad() {
-    displayedLogic();
+	let data = guidelineData.events.values;
+    displayedLogic(data);
 }
-let data = guidelineData.events.values;
 
 
-function displayedLogic() {
+function displayedLogic(data) {
 	console.log("hello")
     console.log(data.length)
     console.log("works")
@@ -94,12 +94,12 @@ function displayedLogic() {
     for (let i = 0; i < Object.keys(data).length; i++) {
         console.log("hello")
         console.log(data[i])
-        html += `<a><div class="guideline-cards">
+        html += `<a class="cursor-pointer"><div class="guideline-cards">
             <div class="outerCardImageContainer">
             <img id="innerCardImage" class="w-48 p-4" src="${data[i].imageURL}">
             </div>
             <div class="w-full">
-                <p id="innerCardText p-4">${data[i].DropDownOption}</p>
+                <p class="inner-card__text" id="innerCardText">${data[i].DropDownOption}</p>
             </div>
         </div>
         </a>`;
