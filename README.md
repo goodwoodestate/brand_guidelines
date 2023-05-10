@@ -1,14 +1,10 @@
-# brand_guidelines
-Brand guidelines for goodwood estate
+# Goodwood Estate Brand_guidelines
+Brand guidelines for the Goodwood Estate that ensure proffessional sophisticated perfect delivery upon every aspect across the company.
 
-#### Brand Guide lines
+#### The purpose of this file
+The idea of this site is to ensure that we can generate work efficiently ensuring standards are always met across the different business areas.
+You can use this site via navigating throught the tabs on the brand guideline page to find the neccessary guidelines by Estate, Hospitality or the different events.
+There is attached PDFS with the signed approved designs and themes.
 
 
-
-~~~ DEV NOTES ~~~
-
-1:Sort out fonts 
-2: Run logic out on paper prior. make one nice function for the whole site that re iterates dependant on click and default data structure. also makes adding files to it very simple!
-3: Look at the card section on homepage in regards to the padding of the area
-4: Sort out the basic jspon file structure
 
