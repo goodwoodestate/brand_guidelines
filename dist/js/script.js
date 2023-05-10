@@ -79,56 +79,45 @@ var guidelineData = {
 
 // Gets the elements that we are going to be injecting data
 let cardContainer = document.getElementById("outerCardContainer");
-function onPageLoad() {
-	let data = guidelineData.events.values;
-    displayedLogic(data);
-}
+let currentData = guidelineData.events.values;
 
+function onPageLoad() {
+  displayedLogic(currentData);
+}
 
 function displayedLogic(data) {
-	console.log("hello")
-    console.log(data.length)
-    console.log("works")
-    let injectContainer = document.getElementById("outerCardContainer");
-    let html = "";
-    for (let i = 0; i < Object.keys(data).length; i++) {
-        console.log("hello")
-        console.log(data[i])
-        html += `<a class="cursor-pointer"><div class="guideline-cards">
-            <div class="outerCardImageContainer">
+  let injectContainer = document.getElementById("outerCardContainer");
+  let html = "";
+  for (let i = 0; i < Object.keys(data).length; i++) {
+    html += `
+      <a>
+        <div class="guideline-cards">
+          <div class="outerCardImageContainer">
             <img id="innerCardImage" class="w-48 p-4" src="${data[i].imageURL}">
-            </div>
-            <div class="w-full">
-                <p class="inner-card__text" id="innerCardText">${data[i].DropDownOption}</p>
-            </div>
+          </div>
+          <div class="w-full">
+            <p class="inner-card__text" id="innerCardText">${data[i].DropDownOption}</p>
+          </div>
         </div>
-        </a>`;
-    }
-    injectContainer.innerHTML = html;
+      </a>
+    `;
+  }
+  injectContainer.innerHTML = html;
 }
+
 onPageLoad();
 
-// select the container where the HTML will be added
-// const container = document.querySelector('#container');
+document.getElementById("eventBtn").addEventListener("click", function () {
+  currentData = guidelineData.events.values;
+  displayedLogic(currentData);
+});
 
-// // loop over the events data
-// for (let i = 0; i < guidelineData.events.values.length; i++) {
-//     // create a new HTML element
-//     const div = document.createElement('div');
-//     div.classList.add('sm:w-78', 'sm:h-86', 'border-1', 'border-[#131313]');
+document.getElementById("hospitalityBtn").addEventListener("click", function () {
+  currentData = guidelineData.EntertainingHospitality.values;
+  displayedLogic(currentData);
+});
 
-//     // create a new image element and set its source to the imageURL
-//     const img = document.createElement('img');
-//     img.id = 'innerCardImage';
-//     img.src = guidelineData.events.values[i].imageURL;
-//     div.appendChild(img);
-
-//     // create a new paragraph element and set its text to the DropdownOption
-//     const p = document.createElement('p');
-//     p.id = 'innerCardText';
-//     p.innerText = guidelineData.events.values[i].DropDownOption;
-//     div.appendChild(p);
-
-//     // add the new HTML element to the container
-//     container.appendChild(div);
-// }
+document.getElementById("estateBtn").addEventListener("click", function () {
+  currentData = guidelineData.estate.values;
+  displayedLogic(currentData);
+});
