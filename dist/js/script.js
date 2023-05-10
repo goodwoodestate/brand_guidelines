@@ -6,37 +6,37 @@ var guidelineData = {
 		0: {
 			DropDownOption: "Festival of Speed",
 			imageURL:
-			"https://static.goodwood.com/globalassets/motorsport/fos/logo/festival-of-speed-logo.svg?width=800&quality=80",
+			"https://static.goodwood.com/globalassets/motorsport/fos/logo/festival-of-speed-logo.svg?width=80&quality=80",
 			pdfALink: "#",
 		},
 		1: {
 			DropDownOption: "Members Meeting",
 			imageURL:
-			"https://ticketing.goodwood.com/Assets/HTML/Images/logos/grrc-color-logo.svg?width=800&quality=80",
+			"https://ticketing.goodwood.com/Assets/HTML/Images/logos/grrc-color-logo.svg?width=80&quality=80",
 			urlAppliedFilter: "#",
 		},
 		2: {
 			DropDownOption: "Goodwood Revival",
 			imageURL:
-			"https://static.goodwood.com/globalassets/revival-logo.png?width=800&quality=80",
+			"https://static.goodwood.com/globalassets/revival-logo.png?quality=80",
 			pdfALink: "#",
 		},
 		3: {
 			DropDownOption: "Qatar Goodwood",
 			imageURL:
-			"https://www.goodwood.com/globalassets/press/horseracing/qgf-logo---red-outline.png?width=800&quality=80",
+			"https://www.goodwood.com/globalassets/press/horseracing/qgf-logo---red-outline.png?quality=80",
 			urlAppliedFilter: "#",
 		},
 		4: {
 			DropDownOption: "Goodwoof",
 			imageURL:
-			"https://static.goodwood.com/globalassets/goodwoof/goodwoof-mars-petcare-logo.png?width=800&quality=80",
+			"https://static.goodwood.com/globalassets/goodwoof/goodwoof-mars-petcare-logo.png?quality=80",
 			pdfALink: "#",
 		},
 		5: {
 			DropDownOption: "Goodwood Racecourse",
 			imageURL:
-			"https://static.goodwood.com/globalassets/horseracing/racecourse/racecourse.png",
+			"https://static.goodwood.com/globalassets/horseracing/racecourse/racecourse.png?quality=80",
 			urlAppliedFilter: "#",
 		},
 		},
@@ -47,13 +47,13 @@ var guidelineData = {
             0: {
                 DropDownOption: "Goodwoof",
                 imageURL:
-                "https://static.goodwood.com/globalassets/horseracing/2019/fixtures/op-sat/qgf_18_chrisison_0161.jpg?width=800&quality=80",
+                "https://static.goodwood.com/globalassets/horseracing/2019/fixtures/op-sat/qgf_18_chrisison_0161.jpg?width=80&quality=80",
                 pdfALink: "#",
             },
             1: {
                 DropDownOption: "Goodwood Racecourse",
                 imageURL:
-                "https://static.goodwood.com/globalassets/horseracing/openingsaturday_17_jaysonfong_146.jpg?width=800&quality=80",
+                "https://static.goodwood.com/globalassets/horseracing/openingsaturday_17_jaysonfong_146.jpg?width=80&quality=80",
                 urlAppliedFilter: "#",
             },
 		},
@@ -64,13 +64,13 @@ var guidelineData = {
             0: {
                 DropDownOption: "Goodwoof",
                 imageURL:
-                "https://static.goodwood.com/globalassets/horseracing/2019/fixtures/op-sat/qgf_18_chrisison_0161.jpg?width=800&quality=80",
+                "https://static.goodwood.com/globalassets/horseracing/2019/fixtures/op-sat/qgf_18_chrisison_0161.jpg?width=80&quality=80",
                 pdfALink: "#",
             },
             1: {
                 DropDownOption: "Goodwood Racecourse",
                 imageURL:
-                "https://static.goodwood.com/globalassets/horseracing/openingsaturday_17_jaysonfong_146.jpg?width=800&quality=80",
+                "https://static.goodwood.com/globalassets/horseracing/openingsaturday_17_jaysonfong_146.jpg?width=80&quality=80",
                 urlAppliedFilter: "#",
             },
 		},

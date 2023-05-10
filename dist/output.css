@@ -710,6 +710,10 @@ video {
   width: 100%;
 }
 
+.w-11\/12 {
+  width: 91.666667%;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -1140,6 +1144,10 @@ video {
     width: 625px;
   }
 
+  .sm\:w-full {
+    width: 100%;
+  }
+
   .sm\:max-w-\[80rem\] {
     max-width: 80rem;
   }
@@ -1158,6 +1166,10 @@ video {
 
   .sm\:justify-end {
     justify-content: flex-end;
+  }
+
+  .sm\:justify-between {
+    justify-content: space-between;
   }
 
   .sm\:px-4 {
