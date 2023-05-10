@@ -1,3 +1,4 @@
+// Data Set
 var guidelineData = {
 	events: {
 		type: "object",
@@ -81,22 +82,25 @@ var guidelineData = {
 let cardContainer = document.getElementById("outerCardContainer");
 let currentData = guidelineData.events.values;
 
+// Lazy loader method
 function onPageLoad() {
   displayedLogic(currentData);
 }
 
-function displayedLogic(data) {
+
+// Renders out basic html cards with tailwind classes, loops over objects within the current data array
+function displayedLogic(currentData) {
   let injectContainer = document.getElementById("outerCardContainer");
   let html = "";
-  for (let i = 0; i < Object.keys(data).length; i++) {
+  for (let i = 0; i < Object.keys(currentData).length; i++) {
     html += `
-      <a>
+      <a class="cursor-pointer" src="${currentData[i].pdfALink}">
         <div class="guideline-cards">
           <div class="outerCardImageContainer">
-            <img id="innerCardImage" class="w-48 p-4" src="${data[i].imageURL}">
+            <img id="innerCardImage" class="w-48 p-4" src="${currentData[i].imageURL}">
           </div>
           <div class="w-full">
-            <p class="inner-card__text" id="innerCardText">${data[i].DropDownOption}</p>
+            <p class="inner-card__text" id="innerCardText">${currentData[i].DropDownOption}</p>
           </div>
         </div>
       </a>
@@ -105,19 +109,39 @@ function displayedLogic(data) {
   injectContainer.innerHTML = html;
 }
 
-onPageLoad();
-
+// Added event listeners for each button adn changes data set and passes and reruns content function
 document.getElementById("eventBtn").addEventListener("click", function () {
   currentData = guidelineData.events.values;
   displayedLogic(currentData);
 });
 
+// Added event listeners for each button adn changes data set and passes and reruns content function
 document.getElementById("hospitalityBtn").addEventListener("click", function () {
   currentData = guidelineData.EntertainingHospitality.values;
   displayedLogic(currentData);
 });
 
+// Added event listeners for each button adn changes data set and passes and reruns content function
 document.getElementById("estateBtn").addEventListener("click", function () {
   currentData = guidelineData.estate.values;
   displayedLogic(currentData);
 });
+
+
+const tabBtns = document.querySelectorAll(".outertabContainer a");
+
+// Add event listener to each tab button
+tabBtns.forEach(tabBtn => {
+  tabBtn.addEventListener("click", () => {
+	// Remove active class from all tab buttons
+	tabBtns.forEach(btn => {
+	  btn.classList.remove("active-tab");
+	});
+
+	// Add active class to clicked tab button
+	tabBtn.classList.add("active-tab");
+  });
+});
+
+// Runs when the page loads in to ensure that all code above styles and data sets are preloaded
+onPageLoad();

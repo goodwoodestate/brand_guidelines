@@ -1070,6 +1070,11 @@ video {
   align-items: center;
 }
 
+.active-tab {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
 .hover\:bg-gray-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
