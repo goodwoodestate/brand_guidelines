@@ -9,5 +9,6 @@ There is attached PDFS with the signed approved designs and themes.
 ### Dev Notes
 1. Need to marry up links for all Footer clickable elements.
 2. Marry up links for the overall PDFS linked via JSON
-3. Speak with Steve regarding the images of the site sizing is proving to be a issue
+3. Need to confirm the imagery and the exact content.
+4. Can confirm that the site is now live using Netlify as our host 
 
