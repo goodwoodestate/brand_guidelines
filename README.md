@@ -11,4 +11,5 @@ There is attached PDFS with the signed approved designs and themes.
 2. Marry up links for the overall PDFS linked via JSON
 3. Need to confirm the imagery and the exact content.
 4. Can confirm that the site is now live using Netlify as our host 
-
+5. Need to confirm spacing between cards on main page
+6. Confirm the lines next to elements in design and add this in.
