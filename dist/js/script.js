@@ -45,15 +45,15 @@ var guidelineData = {
 		type: "object",
 		values: {
             0: {
-                DropDownOption: "Goodwoof",
+                DropDownOption: "House",
                 imageURL:
-                "https://static.goodwood.com/globalassets/horseracing/2019/fixtures/op-sat/qgf_18_chrisison_0161.jpg?width=80&quality=80",
+                "https://www.goodwood.com/globalassets/goodwood-estate/homepage-hero-image.jpg?width=1300&quality=80",
                 pdfALink: "#",
             },
             1: {
                 DropDownOption: "Goodwood Racecourse",
                 imageURL:
-                "https://static.goodwood.com/globalassets/horseracing/openingsaturday_17_jaysonfong_146.jpg?width=80&quality=80",
+                "https://static.goodwood.com/globalassets/horseracing/openingsaturday_17_jaysonfong_146.jpg?width=1300&quality=80",
                 urlAppliedFilter: "#",
             },
 		},
