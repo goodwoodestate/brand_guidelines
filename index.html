@@ -30,8 +30,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <style>
+ 
+
+        @font-face {
+          font-family: "GillSansMT";
+          src: url('https://static.goodwood.com/globalassets/goodwood-75/main/assets/webfonts/GillSansMT/GillSansMTBook/font.woff2') format('woff2'), url('https://static.goodwood.com/globalassets/goodwood-75/main/assets/webfonts/GillSansMT/GillSansMTBook/font.woff') format('woff');
+          font-weight: 400;
+          font-style: normal;
+        }
+      
+        @font-face {
+          font-family: "GillSansMT";
+          src: url('https://static.goodwood.com/globalassets/goodwood-75/main/assets/webfonts/GillSansMT/GillSansMTMedium/font.woff2') format('woff2'), url('https://static.goodwood.com/globalassets/goodwood-75/main/assets/webfonts/GillSansMT/GillSansMTMedium/font.woff') format('woff');
+          font-weight: 500;
+          font-style: normal;
+        }
+        @font-face {
+          font-family: "GillSansMT";
+          src: url('https://static.goodwood.com/globalassets/goodwood-75/main/assets/webfonts/GillSansMT/GillSansMTBold/font.woff2') format('woff2'), url('https://static.goodwood.com/globalassets/goodwood-75/main/assets/webfonts/GillSansMT/GillSansMTBold/font.woff') format('woff');
+          font-weight: 700;
+          font-style: normal;
+        }
+      
+        h1, h2, h3, h4, h5, h6, .font-gs { 
+            font-family: 'GillSansMT', sans-serif;
+            line-height: 1;
+        }
+          </style>
     <link href="./dist/output.css" rel="stylesheet">
     <link href="./dist/nav.css" rel="stylesheet">
+
     <title>Goodwood Brand and Guidelines</title>
 </head>
 
@@ -155,8 +184,8 @@
         <section class="w-full flex justify-center">
             <div class="sm:max-w-[90rem] sm:pt-16 pt-8 pb-13 sm:pb-17 sm:px-20 w-11/12 sm:w-full">
                 <img alt="Goodwood Crest" class="h-[89.22px] w-[59.07px]" src="../dist/images/estate-logo.png">
-                <h2 class="text-white uppercase text-sm sm:text-lg font-semibold tracking-widest mt-6">Goodwood Design
-                    --</h2>
+                <h2 class="text-white uppercase text-sm sm:text-lg font-semibold tracking-[0.25rem] mt-6">Goodwood Design &mdash; 
+                    </h2>
                 <h3
                     class="uppercase text-[2.5rem] sm:text-[3.75rem] w-[full] font-normal tracking-widest mt-6 text-white">
                     Delivering Exceptional Experiences, <span class="text-[#9EE0D8]">For Everyone.</span></h3>
@@ -164,15 +193,15 @@
                     world’s leading luxury experience brand and to be recognised as the best in the world at whatever we
                     do.</p>
                 <a href="./brand.html"
-                    class="flex flex-col items-center justify-center mt-6 text-xs tracking-widest bg-[#9EE0D8] text-center w-[184px] h-12 font-semibold uppercase">
-                    <div>Brand Guidelines</div>
+                    class="font-gs inline-block items-center justify-center mt-6 text-xs tracking-[0.125rem] leading-none bg-[#9EE0D8] hover:bg-transparent border-2 border-[#9EE0D8] hover:text-white text-center px-6 py-4 h-12 uppercase">
+                    Brand Guidelines
                 </a>
                 <img alt="Goodwood Crest" class="mt-8 sm:mt-16 w-full" src="../dist/images/map.png">
             </div>
         </section>
     </section>
 
-    <section class="flex flex-col items-center mt-5 sm:mt-20">
+    <section class="flex flex-col items-center mt-10 sm:mt-20">
         <div class="sm:max-w-[90rem] sm:px-20 flex flex-col items-center">
             <h4 class="uppercase tracking-widest text-sm sm:text-base font-semibold mb-5 sm:mb-10">Our values</h4>
             <p class="w-[90%] sm:w-[59%] text-xl sm:text-center eb-garamond sm:text-3xl font-normal">The Goodwood brand is key to everything we do. It embraces every aspect of the business from print to digital, architecture to interior design, how we conduct ourselves to how we treat our guests.</p>
@@ -181,9 +210,9 @@
         <!-- Value Cards Container -->
     </section>
     <section class="flex flex-col items-center sm:mt-15 mt-8.5">
-        <div class="x-5 sm:max-w-[90rem] sm:px-20 flex flex-col sm:flex-row flex-wrap gap-8 justify-center">
+        <div class="sm:max-w-[90rem] px-5 sm:px-20 flex-col sm:flex-row flex-wrap justify-center grid grid-cols-1 sm:grid-cols-2 gap-4">
             <!-- Card1 -->
-            <div class="w-80 border-solid border-1 border-black sm:w-[625px] sm:h-[316px] ">
+            <div class=" border-solid border-1 border-black">
                 <div class="p-6 sm:px-9 sm:py-16">
                     <small class="text-grey-minor-numbers mr-2 relative top-[1.563rem] right-[1.25rem]">01</small>
                     <p class="uppercase text-lg font-semibold mb-2">quality</p>
@@ -196,7 +225,7 @@
                 </div>
             </div>
             <!-- Card2 -->
-            <div class="w-80 border-solid border-1 border-black sm:w-[625px] sm:h-[316px] ">
+            <div class=" border-solid border-1 border-black ">
                 <div class="p-6 sm:px-9 sm:py-16">
                     <small class="text-grey-minor-numbers mr-2 relative top-[1.563rem] right-[1.25rem]">02</small>
                     <p class="uppercase text-lg font-semibold mb-2">Authenticity</p>
@@ -209,7 +238,7 @@
                 </div>
             </div>
             <!-- Card3 -->
-            <div class="w-80 border-solid border-1 border-black sm:w-[625px] sm:h-[316px] ">
+            <div class="border-solid border-1 border-black ">
                 <div class="p-6 sm:px-9 sm:py-16">
                     <small class="text-grey-minor-numbers mr-2 relative top-[1.563rem] right-[1.25rem]">03</small>
                     <p class="uppercase text-lg font-semibold mb-2">The "Wow"</p>
@@ -222,7 +251,7 @@
                 </div>
             </div>
             <!-- Card4 -->
-            <div class="w-80 border-solid border-1 border-black sm:w-[625px] sm:h-[316px] ">
+            <div class="border-solid border-1 border-black ">
                 <div class="p-6 sm:px-9 sm:py-16">
                     <small class="text-grey-minor-numbers mr-2 relative top-[1.563rem] right-[1.25rem]">04</small>
                     <p class="uppercase text-lg font-semibold mb-2">Infectious Enthusiasm</p>
