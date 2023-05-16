@@ -45,16 +45,18 @@ var guidelineData = {
 		type: "object",
 		values: {
             0: {
-                DropDownOption: "House",
+                DropDownOption: "Core",
                 imageURL:
-                "https://www.goodwood.com/globalassets/goodwood-estate/homepage-hero-image.jpg?width=1300&quality=80",
-                pdfALink: "#",
+                "https://www.goodwood.com/globalassets/email/talent/goodwood-estate-logo-2x.png",
+                pdfALink: "https://static.goodwood.com/globalassets/brand/guidelines/brand-guidelines-goodwood-core-brand.pdf",
             },
             1: {
-                DropDownOption: "Goodwood Racecourse",
+                DropDownOption: "The Kennels",
                 imageURL:
-                "https://static.goodwood.com/globalassets/horseracing/openingsaturday_17_jaysonfong_146.jpg?width=1300&quality=80",
+                "https://ticketing.goodwood.com/Assets/HTML/Images/logos/the-kennels-logo.svg",
                 urlAppliedFilter: "#",
+				pdfALink: "https://static.goodwood.com/globalassets/brand/guidelines/brand-guidelines-goodwood-the-kennels.pdf",
+
             },
 		},
 	},
@@ -94,7 +96,7 @@ function displayedLogic(currentData) {
   let html = "";
   for (let i = 0; i < Object.keys(currentData).length; i++) {
     html += `
-      <a class="cursor-pointer" src="${currentData[i].pdfALink}">
+      <a class="cursor-pointer" src="${currentData[i].pdfALink}" rel="nofollow">
         <div class="guideline-cards">
           <div class="outerCardImageContainer">
             <img id="innerCardImage" class="w-48 p-4" src="${currentData[i].imageURL}">
