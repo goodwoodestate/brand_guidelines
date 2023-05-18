@@ -96,16 +96,16 @@ function displayedLogic(currentData) {
   let html = "";
   for (let i = 0; i < Object.keys(currentData).length; i++) {
     html += `
-      <a class="cursor-pointer" target=”_blank” href="${currentData[i].pdfALink}"  rel="nofollow">
-        <div class="guideline-cards">
-          <div class="outerCardImageContainer">
-            <img id="innerCardImage" class="w-48 p-4" src="${currentData[i].imageURL}">
-          </div>
-          <div class="w-full">
-            <p class="inner-card__text" id="innerCardText">${currentData[i].DropDownOption}</p>
-          </div>
-        </div>
-      </a>
+	<a class="cursor-pointer border-solid border-1 border-black group hover:bg-black" target=”_blank” href="${currentData[i].pdfALink}"  rel="nofollow">
+	<div>
+	  <div class="outerCardImageContainer">
+		<img id="innerCardImage" class="w-48 p-4" src="${currentData[i].imageURL}">
+	  </div>
+	  <div class="w-full">
+		<p class="inner-card__text" id="innerCardText">${currentData[i].DropDownOption}</p>
+	  </div>
+	</div>
+  </a>
     `;
   }
   injectContainer.innerHTML = html;

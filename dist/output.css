@@ -652,6 +652,14 @@ video {
   top: 1.563rem;
 }
 
+.left-\[28px\] {
+  left: 28px;
+}
+
+.top-\[18px\] {
+  top: 18px;
+}
+
 .isolate {
   isolation: isolate;
 }

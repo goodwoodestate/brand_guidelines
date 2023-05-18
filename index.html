@@ -80,7 +80,7 @@
                             </a>
 
                         </div>
-                        <div class="inset-y-0 left-0 flex items-center sm:hidden">
+                        <div class="absolute items-center top-[18px] left-[28px] sm:hidden">
                             <!-- Mobile menu button-->
                             <button type="button" id="mobile-burger"
                                 class="inline-flex items-center justify-center rounded-md p-2 text-white focus:outline-none"
@@ -112,7 +112,7 @@
                                 </svg>
                             </button>
                         </div>
-                        <div class="flex-shrink-0 items-center sm:hidden flex">
+                        <div class="flex-shrink-0 items-center sm:hidden absolute">
                             <a href="/">
                                 <img class="block h-4 w-auto"
                                     src="https://www.goodwood.com/resources/assets/dist/img/logo-x2.png"
@@ -191,8 +191,7 @@
                 <h2 class="text-white uppercase text-sm sm:text-lg font-semibold tracking-[0.25rem] mt-6">Goodwood Design &mdash; 
                     </h2>
                 <h3
-                    class="uppercase text-[2.5rem] sm:text-[3.75rem] w-[full] tracking-widest mt-6 text-white">
-                    Delivering Exceptional Experiences, <span class="text-[#9EE0D8]">For Everyone.</span></h3>
+                    class="uppercase text-[2.5rem] sm:text-[3.75rem] w-full tracking-widest mt-6 text-white">Delivering Exceptional Experiences, <span class="text-[#9EE0D8]">For Everyone.</span></h3>
                 <p class="text-lg sm:text-2xl eb-garamond mt-6 text-[#ffffffb3] w-full md:w-[38rem]">We want to be the
                     world’s leading luxury experience brand and to be recognised as the best in the world at whatever we
                     do.</p>
@@ -315,7 +314,8 @@
           document.getElementById("last-push-date").textContent = formattedDate; // Display the formatted date in the element
         });
       </script>
-      
+
+
       
 </body>
 <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
