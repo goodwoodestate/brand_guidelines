@@ -82,7 +82,7 @@ var guidelineData = {
 
 // Gets the elements that we are going to be injecting data
 let cardContainer = document.getElementById("outerCardContainer");
-let currentData = guidelineData.events.values;
+let currentData = guidelineData.estate.values;
 
 // Lazy loader method
 function onPageLoad() {
