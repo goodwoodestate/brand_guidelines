@@ -2948,6 +2948,10 @@ video {
     flex-direction: row;
   }
 
+  .sm\:items-start {
+    align-items: flex-start;
+  }
+
   .sm\:items-stretch {
     align-items: stretch;
   }
