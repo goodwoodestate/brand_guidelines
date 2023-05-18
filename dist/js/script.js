@@ -96,7 +96,7 @@ function displayedLogic(currentData) {
   let html = "";
   for (let i = 0; i < Object.keys(currentData).length; i++) {
     html += `
-      <a class="cursor-pointer" src="${currentData[i].pdfALink}" rel="nofollow">
+      <a class="cursor-pointer" target=”_blank” href="${currentData[i].pdfALink}"  rel="nofollow">
         <div class="guideline-cards">
           <div class="outerCardImageContainer">
             <img id="innerCardImage" class="w-48 p-4" src="${currentData[i].imageURL}">
