@@ -292,7 +292,7 @@
                 <p class="text-center">© 2023 The Goodwood Estate. All rights reserved.</p>
             </div>
             <div class="flex gap-4">
-                <p id="buildDate"></p>
+                <p id="last-push-date"></p>
                 <a href="#">
                     <p>Terms</p>
                 </a>
@@ -308,13 +308,14 @@
     <script type="text/javascript" src="./dist/js/nav.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-          var buildDate = process.env.BUILD_DATE; // Access the environment variable set in Netlify
+          var buildDate = process.env.BUILD_DATE; // Access the environment variable set during the build process
           var dateFormat = process.env.BUILD_DATE_FORMAT; // Access the date format variable
-          var formattedDate = new Date(buildDate).toLocaleString([], { dateStyle: "full", timeStyle: "long" }); // Format the date
+          var formattedDate = new Date(buildDate * 1000).toLocaleString([], { dateStyle: "full", timeStyle: "long" }); // Format the date (multiply by 1000 to convert from Unix timestamp)
       
           document.getElementById("last-push-date").textContent = formattedDate; // Display the formatted date in the element
         });
       </script>
+      
       
 </body>
 <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch

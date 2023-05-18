@@ -1,0 +1,2 @@
+[build]
+  command = "echo \"BUILD_DATE=$(git log -1 --pretty=format:'%ct')\" >> .env"
