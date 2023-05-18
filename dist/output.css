@@ -1469,10 +1469,6 @@ video {
   justify-items: stretch;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
 .gap-6 {
   gap: 1.5rem;
 }
@@ -2933,10 +2929,6 @@ video {
 
   .sm\:max-w-\[80rem\] {
     max-width: 80rem;
-  }
-
-  .sm\:max-w-\[81rem\] {
-    max-width: 81rem;
   }
 
   .sm\:max-w-\[90rem\] {
