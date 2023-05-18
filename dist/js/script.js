@@ -47,7 +47,7 @@ var guidelineData = {
             0: {
                 DropDownOption: "Core",
                 imageURL:
-                "https://www.goodwood.com/globalassets/email/talent/goodwood-estate-logo-2x.png",
+                "https://static.goodwood.com/globalassets/email/talent/goodwood-estate-logo-2x.png",
                 pdfALink: "https://static.goodwood.com/globalassets/brand/guidelines/brand-guidelines-goodwood-core-brand.pdf",
             },
             1: {
