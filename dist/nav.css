@@ -184,3 +184,27 @@ Usage: codyhouse.co/license
       display: none;
     }
   }
+  h1, h2, h3, h4, h5, h6, .font-gs { 
+    font-family: 'GillSansMT', sans-serif;
+    line-height: 1;
+}
+
+  @font-face {
+    font-family: "GillSansMT";
+    src: url('./fonts/GillsSansMT/GillSansMTBook/font.woff2') format('woff2'), url('./fonts/GillsSansMT/GillSansMTBook/font.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "GillSansMT";
+    src: url('./fonts/GillsSansMT/GillSansMTMedium/font.woff2') format('woff2'), url('./fonts/GillsSansMT/GillSansMTMedium/font.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "GillSansMT";
+    src: url('./fonts/GillsSansMT/GillSansMTBold/font.woff2') format('woff2'), url('./fonts/GillsSansMT/GillSansMTBold/font.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
